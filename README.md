@@ -1,7 +1,7 @@
-Marta Bus
----------
+Glue for the Marta App: Which Bus Is Gonna Short-Turn?
+------------------------------------------------------
 
-Marta's #6 bus route travels between Lindbergh Station and Inman Park Station, passing by Emory University. However, some southbound rush hour trips from Lindbergh short-turn at Emory; if you were wanting to go to Inman Park, you'd have to wait for the next bus. Unfortunately, the MARTA On The Go app doesn't have any way to show you an en-route bus's destination. Not knowing whether the next bus will take you home can be a problem for #6 bus riders; they can end up waiting at the stop for a long time and, at rush hour, the On The Go app is rendered basically useless by this problem.
+Marta's #6 bus route runs from Lindbergh Station and Inman Park Station, passing by Emory University... most of the time. However, some southbound rush hour trips from Lindbergh short-turn at Emory; if you were wanting to go to Inman Park, you'd have to wait for the next bus. Unfortunately, the MARTA On The Go app doesn't have any way to show you an en-route bus's destination. Not knowing whether the next bus will take you home can be a problem for #6 bus riders; they can end up waiting at the stop for a long time and, at rush hour, the On The Go app is rendered basically useless by this problem.
 
 This application is meant to be a stopgap solution. Bus riders can text a special number to receive two pieces of information about each southbound en-route #6 buses: the scheduled end point of the bus route and the vehicle number. That vehicle number can be cross-correlated with the data from the MARTA On The Go app for bus realtime(-ish) locations and also with the number on a physical bus, once it arrives.
 
