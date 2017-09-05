@@ -1,0 +1,11 @@
+# this is a secret!
+secrets.yaml
+
+# this is just random I crap I have in the directory
+6busjson/
+current_southbound_6_bus_terminal.sh
+google_transit.zip
+gtfs/
+ngrok
+route6_trips.txt
+trip_id_to_endpoint_json_maker.sh
