@@ -14,7 +14,7 @@ module MartaBus
     end
     message =  (southbound_buses.map do |bus|
       lateness = bus["ADHERENCE"] == "0" ? "on time" : (bus['ADHERENCE'].to_i < 0 ? "#{bus["ADHERENCE"]} min early" : "#{bus["ADHERENCE"]} min late")
-      endpoint = bus["endpoint"].strip.size > 0 ? "#{bus["endpoint"].strip}" : "unknown endpoint"
+      endpoint = bus["endpoint"].strip.size > 0 ? "#{bus["endpoint"].split("STATION").first.strip}" : "unknown endpoint"
       "Veh ##{bus["VEHICLE"]} to #{endpoint}."
     end.join("\n"))
 
