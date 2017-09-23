@@ -8,7 +8,7 @@ module MartaBus
   def self.make_message
     json_resp = RestClient.get(API_URL)
     resp = JSON.load(json_resp)
-    southbound_buses = resp.select{|bus| bus["DIRECTION"] == "Southbound" }
+(    southbound_buses = resp.select{|bus| bus["DIRECTION"] == "Southbound" }
     southbound_buses.each do |bus| 
       bus["endpoint"] = `psql -qtA marta -c "select stop_name from stop_times join stops using (stop_id) where trip_id = '#{bus["TRIPID"]}' order by stop_sequence desc limit 1;"`
     end
@@ -17,7 +17,7 @@ module MartaBus
       endpoint = bus["endpoint"].strip.size > 0 ? "#{bus["endpoint"].split("STATION").first.strip}" : "unknown endpoint"
       "Veh ##{bus["VEHICLE"]} to #{endpoint}."
     end.join("\n"))
-
+)
   end
 end
 
